@@ -1,0 +1,61 @@
+*{
+    border: none;
+}
+img
+{
+    max-height: 125px;
+}
+body{
+    background-image: url("src/assets/images/money4.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+.card
+{
+float: left;
+margin :20px
+}
+div.card
+{
+width:250px;
+text-align:center;
+box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+div.container
+{
+padding: 1px;
+background-color: rgb(245, 242, 242);
+}
+div.header
+{
+
+background-color: white;
+padding:1px;
+}
+.neonText {
+    color: #12193b;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(207, 212, 212),
+        0 0 82px rgb(95, 107, 103),
+        0 0 92px rgb(158, 172, 167),
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+  }
+
+  h1{
+    font-size: 80px;
+    text-align: center;
+    color: rgb(254, 255, 194);
+    text-overflow: initial;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 200;
+
+
+}

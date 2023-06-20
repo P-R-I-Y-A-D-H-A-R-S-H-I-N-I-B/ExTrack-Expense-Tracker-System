@@ -1,0 +1,37 @@
+<body>
+   
+    
+<div style="background-color: rgb(245, 245, 220); background-size: 100% 100%;">
+<h1>Budget List</h1>
+<button style="position: absolute;left: 700px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: darkgreen;border-radius: 40px; " routerLink="budget">Add</button>
+<button style="position: absolute;left: 900px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(201, 147, 21);border-radius: 40px; " routerLink="budget-chart">View</button>
+<button style="position: absolute;left: 1100px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(6, 7, 6);border-radius: 40px; " routerLink="/home2">Back</button>
+<button style="position: absolute;left: 1300px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(156, 156, 156);border-radius: 40px; " (click)="logout1()">Logout</button>
+<pre>
+
+</pre>
+<table class="table table-striped" style="font-size: 20px;color: rgb(12, 1, 1);font-weight: 400;">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Budget Category</th>
+            <th>Amount</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let tabentry of budgetData; let i = index;" >
+            <td>{{i+1}}</td>
+            <td>{{tabentry.budgetCategory}}</td>
+            <td>{{tabentry.budgetAmount}}</td>
+            <td>
+                <button routerLink="budget/tabentry.budgetCategory/{{this.email}}"  class="btn btn-success">Edit</button>
+                <button  (click)="ondelete(tabentry.budgetCategory,i)" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<br>
+</div>
+</body>

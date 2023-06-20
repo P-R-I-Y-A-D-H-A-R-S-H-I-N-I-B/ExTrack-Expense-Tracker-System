@@ -1,0 +1,47 @@
+body{
+    background-image: url("src/assets/images/pexels-mikhail-nilov-7735624.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+img
+{
+    max-height: 125px;
+}
+
+  .h2{
+    text-align: center;
+    text-shadow: #d1e86d;
+    text-overflow: ellipsis;
+    text-decoration: bisque;
+    text-indent: 0cqmax;
+  }
+  #button2{
+    
+    color: rgb(33, 10, 10);
+    background-color: #356181;
+  }
+
+  #button1{
+    
+    color: rgb(33, 10, 10);
+    background-color: #356181;  
+    
+  }
+ .btn{
+  padding-left: 40%;
+  
+  
+ }
+ 
+ .header{
+  width: 50%;
+ }
+  .card {
+    border: 1px solid #1f4654;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    color: #5b1d21;
+    background-color: rgb(166, 218, 218);
+  }

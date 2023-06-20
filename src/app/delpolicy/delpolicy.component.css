@@ -1,0 +1,30 @@
+body{
+    background-image: url("src/assets/images/pexels-mikhail-nilov-7735624.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#button2{
+    
+  color: rgb(33, 10, 10);
+  background-color: #356181;
+  
+}
+
+#button1{
+  
+  color: rgb(33, 10, 10);
+  background-color: #356181;
+  
+  
+}
+.btn{
+  padding-left: 40%;
+}
+  .h2{
+    text-align: center;
+    text-shadow: #d1e86d;
+    text-overflow: ellipsis;
+    text-decoration: bisque;
+    text-indent: 0cqmax;
+  }

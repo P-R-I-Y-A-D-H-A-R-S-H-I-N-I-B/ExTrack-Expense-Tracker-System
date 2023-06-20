@@ -1,0 +1,30 @@
+body{
+    background-image: url("src/assets/images/pic8.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+form{
+    width: 80%;
+    font-size: medium;
+    padding-left: 20%;
+}
+h1{
+    text-align: center;
+    text-shadow: #d1e86d;
+    text-overflow: ellipsis;
+    text-decoration: bisque;
+    text-indent: 0cqmax;
+  }
+  .card{
+    background-color: #d4eafa;
+  }
+
+  #button1{
+    
+    color: rgb(33, 10, 10);
+    background-color: #56656e;  
+    
+  }
+  .btn{
+    padding-left: 40%;
+  }

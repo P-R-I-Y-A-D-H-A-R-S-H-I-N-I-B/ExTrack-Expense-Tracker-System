@@ -1,0 +1,71 @@
+
+<div class="div1">
+    <img class="div1" src="../assets/images/money1.jpg" width="100%" height="100%">
+    <div class="container">
+    <button style="position: absolute;left: 1250px;top: 15px;height: 40px;width: 100px;color: rgb(11, 35, 11);background-color: rgb(232, 223, 94);border-radius: 40px; " routerLink="/home2">Back</button>
+    <img class="img1" src="../assets/images/money2.jpg" >
+    <form>
+
+        <br> 
+        <div>
+            <label for="income">Income</label>
+            <input type="radio" id="income" [(ngModel)] = "money" name="money" value="Income">
+            <label for="expense">&nbsp; &nbsp; &nbsp;Expense</label>
+            <input type="radio" id="expense" name="money" [(ngModel)] = "money" value="Expense" (click)="changeValue()">
+        </div><br><br>
+
+        <div>
+            <label for="amt">Amount &nbsp; &nbsp; &nbsp; &nbsp;:</label>
+            <input type="text" id="amt" [(ngModel)] = "amt" name="amt" required>
+        </div><br><br>
+
+        <div>
+            <label for="s_date">Date &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; :</label>
+            <input type="date" id="s_date" [(ngModel)] = "s_date" name="s_date" required>
+        </div><br><br>
+
+        <div>
+            <label for="description">Description &nbsp; :</label>
+            <input type="text" id="description" [(ngModel)] = "description" name="description" >
+        </div><br><br>
+
+        <div>
+            <label for="on">On cash</label>
+            <input type="radio" id="on" [(ngModel)] = "cash" name="cash" value="On cash" (click)="addCards()">
+            <label for="net">&nbsp; &nbsp; &nbsp;Net Banking</label>
+            <input type="radio" id="net" name="cash" [(ngModel)] = "cash" value="Net Banking" >
+        </div><br><br>
+        <div *ngIf="ifCards">
+            <label for="cards">Card Name&nbsp; &nbsp;:</label>
+            <select name="cards" id="cards" [(ngModel)] = "cards"  >
+                <option value="">Choose a card</option>
+            </select>
+        </div><br><br>
+        
+        <div *ngIf="ifCategory">
+            <label for="category">Category&nbsp; &nbsp; &nbsp; &nbsp;:</label>
+            <select name="category" id="category" [(ngModel)] = "category" >
+            <option value="">Choose a category</option>
+            <option value="Beauty"> Beauty</option>
+            <option value="Clothing"> Clothing</option>
+            <option value="Education">Education</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Food">Food</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Grocery">Grocery</option>
+            <option value="Health">Health</option>
+            <option value="Insurance">Insurance</option>
+            <option value="Pet">Pet</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Stationery">Stationery</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Travel">Travel</option>
+            <option value="Vegetables">Vegetables</option>
+            </select>
+        </div><br><br>
+
+       <input  type="submit" value="Add" (click) ="add()"/>
+       <br><br><br><br><br><br>
+    </form>
+    </div>
+</div>

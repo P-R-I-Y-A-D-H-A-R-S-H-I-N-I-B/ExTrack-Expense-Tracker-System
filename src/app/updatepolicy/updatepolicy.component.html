@@ -1,0 +1,74 @@
+
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand">ExTrack</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <span class="navbar-text">
+              ExTrack expects you to save!!
+            </span>
+          </div>
+
+          <button (click)="logout1()">Logout</button>
+        </div>
+    
+      </nav><br>
+
+      <div class="container mt-4" >
+  
+    
+        <h2>Update Policy</h2><br>
+      <br>
+<form style="width: 60%;">
+    <div class="form-floating mb-3">
+        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email" placeholder="name@example.com" disabled>
+        <label for="floatingInput">Email address</label>
+      </div><br>
+
+      <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="pname" [ngModelOptions]="{standalone: true}" class="form-control" id="pname" placeholder="abcd">
+        <label for="floatingInput">Policy Name</label>
+      </div><br>
+
+      <div class="form-floating">
+        <input type="text" [(ngModel)]="company" [ngModelOptions]="{standalone: true}" class="form-control" id="company" placeholder="****">
+        <label for="floatingPassword">Provided Company</label>
+      </div><br>
+
+      <div class="form-floating">
+        <input type="date" [(ngModel)]="sdate" [ngModelOptions]="{standalone: true}" class="form-control" id="sdate" >
+        <label for="floatingPassword">Start Date</label>
+      </div><br>
+
+      <div class="form-floating">
+        <input type="date" [(ngModel)]="edate" [ngModelOptions]="{standalone: true}" class="form-control" id="edate">
+        <label for="floatingPassword">End Date</label>
+      </div><br>
+
+      <div class="form-floating">
+        <input type="text" [(ngModel)]="amnt" [ngModelOptions]="{standalone: true}" class="form-control" id="amnt" placeholder=456>
+        <label for="floatingPassword">Amount to be paid</label>
+      </div><br>
+
+      <div class="form-floating">
+        <input type="text" [(ngModel)]="cardname" [ngModelOptions]="{standalone: true}" class="form-control" id="cardname" placeholder="homecard">
+        <label for="floatingPassword">Card Name</label>
+      </div><br>
+
+      <div class="btn">
+      <button type="submit" id="button1" class="btn btn-primary mt-4" (click)="updatepolicy()" >Submit</button> 
+      <br>
+
+      <button type="submit" id="button1" class="btn btn-primary mt-4" (click)="goBack()">Return</button> 
+      <br>
+      </div>
+      <br>
+</form>
+
+</div>
+    
+</body>

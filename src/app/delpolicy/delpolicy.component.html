@@ -1,0 +1,50 @@
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand">ExTrack</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+           
+            <span class="navbar-text">
+              ExTrack expects you to save!!
+            </span>
+          </div>
+          <button (click)="logout1()">Logout</button>
+        </div>
+    
+      </nav><br>
+
+
+
+    <div class="container mt-4" >
+  
+        <br><br><br>
+        <h2>Delete Policy</h2><br>
+      <br>
+<form style="width: 60%;">
+    <div class="form-floating mb-3">
+        <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div><br>
+
+      <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="pname" [ngModelOptions]="{standalone: true}" class="form-control" id="pname" placeholder="abcd">
+        <label for="floatingInput">Policy Name</label>
+      </div><br>
+
+
+      <div class="btn">
+      <button type="submit" id="button1" class="btn btn-primary mt-4" (click)="delPolicy()" >Submit</button> 
+      <br>
+
+      <button type="submit" id="button2" class="btn btn-primary mt-4" (click)="goBack()">Return</button> 
+      <br>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</form>
+
+</div>
+</body>

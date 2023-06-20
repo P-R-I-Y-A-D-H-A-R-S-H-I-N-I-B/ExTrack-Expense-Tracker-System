@@ -1,0 +1,43 @@
+<div class="container">
+    <img src="../Images/card3.png" width="400px" height="550px" >
+    <button style="position: absolute;left: 1250px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(51, 64, 68);border-radius: 40px; " routerLink="/home2">Back</button>
+        <form>
+            <h3>Cards</h3>
+            <br>
+            <div>
+                <label>Bank Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp; </label>
+                <input type="text" id="bname" [(ngModel)] = "bname" [ngModelOptions]="{standalone: true}" required>
+            </div><br><br>
+            <div>
+                <label>Account Number &nbsp; : </label>
+                <input type="text" id="ano" [(ngModel)] = "ano" [ngModelOptions]="{standalone: true}" required>
+            </div><br><br>
+            <div>
+                <label >Card Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: </label>
+                <input type="text" id="cname" [(ngModel)] = "cname" [ngModelOptions]="{standalone: true}" required disabled>
+            </div><br><br>
+            <div>
+                <label for="cards">Card Type&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp;</label>
+                <select name="cards" id="cards" [(ngModel)] = "cards" [ngModelOptions]="{standalone: true}">
+                <option value="">Choose a card type</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="ATM Card">ATM Card</option>
+                <option value="Forex Card">Forex Card</option>
+                <option value="Prepaid Card">Prepaid Card</option>
+                <option value="Electronic Card">Electronic Card</option>
+                <option value="Magnetic Stripe Card">Magnetic Stripe Card</option>
+                <option value="Proximity Card">Proximity Card</option>
+                <option value="Smart Card">Smart Card</option>
+                <option value="Contactless NFC Card">Contactless NFC Card</option>
+                <option value="Pin Card">Pin Card</option>
+                </select>
+            </div><br><br>
+            <div>
+                <label >Amount &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: </label>
+                <input type="number" name="amt" [(ngModel)] = "amt" [ngModelOptions]="{standalone: true}" required> 
+            </div><br><br>
+            
+        <input  type="submit" (click) ="update()" value="Update"/>
+        </form>
+</div>

@@ -1,0 +1,63 @@
+<div style="background-image: url('assets/images/b_img.avif'); background-size: 100% 100%;">
+  <div>
+    <pre>
+      
+      
+      
+    </pre>
+    <br>
+    <button (click)="logout1()" style="position: absolute;left: 1100px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: darkgreen;border-radius: 40px;">Logout</button>
+    <button style="position: absolute;left: 1250px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(6, 7, 6);border-radius: 40px; " routerLink="/home2">Back</button>
+    <h1 style="font-size:50px;color: rgb(49, 229, 245);">{{opr}} Budget</h1><pre>
+      
+      
+    </pre>
+    <form #add="ngForm" class="form-group">
+              <div class="form-group" >
+                <img src="assets/images/b7.png">
+                <input type="email" class="form-control" id="email" placeholder="Enter EmailId" required email
+                [(ngModel)]="email" name="mail" #mail="ngModel" [value]="this.email" disabled>
+                
+              </div>
+              <br><br><br><br>
+  
+              <div class="form-group">
+              <img src="assets/images/b1.png"><label style="color:rgb(50, 244, 251);position: absolute;bottom: 300px;left:100px">Category:</label>
+                <select class="form-control" id="budgetCategory" class="no-outline" required
+                  [(ngModel)]="budgetCategory" name="cat" #cat="ngModel" >
+                  <option *ngFor="let cat of category" [value]="cat">{{cat}}</option>
+              </select>
+  
+              </div>
+              <br><br><br><br>
+    
+              <div class="form-group">
+                <img src="assets/images/b5.jpg">
+                <input type="number" class="form-control" id="Amount" placeholder="Amount" required 
+                [(ngModel)]="budgetAmount" name="amt" #amt="ngModel">
+  
+            </div>
+            
+              <br><br><br>
+              <button type="submit" [disabled]="!add.valid" (click)="save()" >Save</button>
+            
+  </form>
+  </div>
+    <pre>
+      
+      
+      
+      
+      
+      
+      
+      
+  
+  
+  
+    </pre>
+  </div>
+  
+  
+  
+    

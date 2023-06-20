@@ -1,0 +1,26 @@
+<body>
+  <br><br>
+  <button style="position: absolute;left: 1250px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: rgb(51, 64, 68);border-radius: 40px; " routerLink="/home2">Back</button>
+  <button style="position: absolute;left: 1100px;top: 15px;height: 40px;width: 100px;color: rgb(222, 235, 222);background-color: darkgreen;border-radius: 40px; " routerLink="bank">Add</button>
+<br><br>
+<h1 class="neonText">Bank Account Details</h1>
+<br><br><br>
+<div class="card" *ngFor="let data of cardData">
+    <div class="container">
+        <h3>{{data.bname}}</h3>
+        <p >{{data.cname}}</p>
+    </div>
+    <div class="header">
+       <img src="../assets/bank.jpg" >
+    </div>
+    <div class="container">
+        <h3>{{data.amt}}</h3>
+    </div>
+    <div class="container">
+        <!--button (click)="update(data._id,data.email,data.bname,data.cname,data.cards,data.ano,data.amt)"><img src="../assets/pencil.png" alt="pencil" width =30px></button-->
+        <button (click)="ddelete(data.cname)"><img src="../assets/delete (1).png" alt="delete" width =30px></button>
+    </div>
+</div>
+</body>
+<!--(click)="update(data.money,data.amt,data.s_date,data.description,data.cash,data.card,data.category)"(click)="update(data.money,data.amt,data.s_date,data.description,data.cash,data.card,data.category)"
+  (click)="delete(data.money,data.amt,data.s_date,data.description,data.cash,data.card,data.category)"-->

@@ -1,0 +1,24 @@
+body{
+  background-image: url("src/assets/images/pic3.jpg");
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+    font-size: 60px;
+    text-align: center;
+    color: rgb(207, 228, 235);
+    text-overflow: initial;
+    font-style: oblique;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    
+  }
+.d1{
+  padding-left: 10%;
+}
+
+.card1 {
+  background-color: #2c937d;
+  color: #f8fafa;
+}

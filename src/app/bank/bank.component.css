@@ -1,0 +1,65 @@
+.div1{
+   
+    background-repeat: no-repeat;
+    background-size: cover; 
+  
+}
+
+
+input{
+    border:none;
+    border-bottom: 1px solid black;
+    color: black;
+}
+input[type=submit]
+{
+    background-color:rgb(16, 14, 16);
+    color:rgb(154, 139, 139); 
+    position :absolute;
+    left:100px;
+    font-size:15px;
+    width:70px; 
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+}
+.img1
+{
+    position: absolute ;
+    border-radius:50px 0px 0px 50px;
+    left: 350px;
+    top: 100px;
+    width: 400px;
+    height: 700px;
+}
+form
+{
+
+    position:absolute; 
+    border-radius:0px 50px 50px 0px;
+    left:750px; 
+    top: 100px;
+    height:700px;
+    width: 500px;
+    text-align:center;
+    font-size:20px;
+    background-color:  rgb(235, 236, 229); 
+    color: rgb(165, 62, 7);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    
+}
+button
+{
+    border:none;
+    background-color:rgb(88, 24, 88);
+    color:white;
+    position :absolute;
+    left:260px; 
+    font-size:15px;
+    width:75px; 
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+}

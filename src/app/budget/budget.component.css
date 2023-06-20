@@ -1,0 +1,46 @@
+div.img{
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+input,select{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: rgba(143, 11, 99, 0.778);
+    height: 50px;
+    width:400px;
+    caret-color: rgb(26, 234, 238);
+    color: rgb(29, 227, 230);
+    border-radius: 40px;
+    position:absolute;
+    left: 200px;
+  }
+
+  button{
+    height: 30px;
+    width: 200px;
+    background-color: rgba(62, 1, 41, 0.778);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-variant-numeric: lining-nums;
+    color: rgb(33, 227, 234);
+    border-radius: 30px;
+    position: absolute;
+    left: 150px;
+    right: 100px;
+  }
+  ::placeholder,select{
+    color: aqua;
+  }
+  label{
+    color: rgb(19, 18, 18);
+    font-size: 20px;
+  }
+  img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left:120px;
+  }
